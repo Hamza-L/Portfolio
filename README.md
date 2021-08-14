@@ -135,7 +135,7 @@ It makes use of this very simple and elegant iterative function
 
 >z = z*z + c
 
-*with the first iteration being at z=0*
+*with the first iteration being at z=0
 
 Depending on how many iterations are needed before the function diverges to infinity, the individual pixel is assigned a colour. Black is assigned if the function converges or is stable. This simple algorithm leads to beautiful fractal pattern.
 
