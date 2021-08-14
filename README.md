@@ -6,6 +6,8 @@
 * [BirdFlock](#birdflock)
 * [Subdivider](#subdivider)
 * [SierpinskiTriangle](#sierpinskitriangle)
+* [BrownianMotion](#brownianmotion)
+* [MandelbrotFractal](#mandelbrotfractal)
 
 ## [ArcBall](https://github.com/Hamza-L/ArcBall)
 Here is the ArcBall UI allowing the user to move about an object in 3D space using only the mouse. This project builds on the VulkanTesting repo, where I test various Vulkan features and implement my own pseudo-engine.
@@ -97,3 +99,38 @@ A simple program making use of the Vulkan API which procedural generates a Sierp
 
 ![alt text](https://raw.githubusercontent.com/Hamza-L/SierpinskiTriangle/master/images/img1.png "Sierpinski Triangle")
 
+# [BrownianMotion](https://github.com/Hamza-L/BrownianMotion)
+A graphics program simulating Brownian Motion. This is the mechanism trough which proteins/molecules diffuse about the cell to get to their destination. Funnily enough, this is a quite reliable mechanism and a lot of the molecules synthetized make use of this seemingly random/unrelieble mechanism.
+
+<img src="https://github.com/Hamza-L/BrownianMotion/raw/master/brownian.gif" alt="BrownianMotion" width="1100"/>
+
+### implementations
+1. random motion.
+2. choice of number of particle
+3. choice of step size
+
+### Dependencies:
+- glfw (window)
+- Vulkan (graphics api)
+- glm (math library)
+
+# [MandelbrotFractal](https://github.com/Hamza-L/MandelbrotFractal)
+A graphics program that generates a mandelbrot fractal. It is mostly shader code.
+
+<img src="https://github.com/Hamza-L/MandelbrotFractal/blob/master/Mandel1.png?raw=true" alt="Mandelbrot1" width="1100"/>
+
+<img src="https://github.com/Hamza-L/MandelbrotFractal/blob/master/Mandel2.png?raw=true" alt="Mandelbrot2" width="1100"/>
+
+### How it works!
+It makes use of this very simple and elegant iterative function
+
+>z = z*z + c
+
+*with the first iteration being at z=0*
+
+Depending on how many iterations are needed before the function diverges to infinity, the individual pixel is assigned a colour. Black is assigned if the function converges or is stable. This simple algorithm leads to beautiful fractal pattern.
+
+### Dependencies:
+- glfw (window)
+- Vulkan (graphics api)
+- glm (math library)
