@@ -99,6 +99,15 @@ A simple program making use of the Vulkan API which procedural generates a Sierp
 
 ![alt text](https://raw.githubusercontent.com/Hamza-L/SierpinskiTriangle/master/images/img1.png "Sierpinski Triangle")
 
+## How it works
+The Sierpinski Triangle is achieved by a very simple operation in which vertices are subdivided such that we end up with 3 triangles from the initial one. This operation is applied recursively until the beautiful sierpinski triangle emerges!
+
+### Dependencies:
+- glfw (window)
+- Vulkan (graphics api)
+- glm (math library)
+- stb_image.h (for importing images: https://github.com/nothings/stb/blob/master/stb_image.h)
+
 # [BrownianMotion](https://github.com/Hamza-L/BrownianMotion)
 A graphics program simulating Brownian Motion. This is the mechanism trough which proteins/molecules diffuse about the cell to get to their destination. Funnily enough, this is a quite reliable mechanism and a lot of the molecules synthetized make use of this seemingly random/unrelieble mechanism.
 
