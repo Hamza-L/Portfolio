@@ -18,7 +18,7 @@ Here is the ArcBall UI allowing the user to move about an object in 3D space usi
 
 1. 3D & 2D geometry
 1. Texture from files
-1. UV Normal textures form files
+1. UV Normal textures from files
 1. Scene graph, allowing objects to become part of a parent objects, sharing on local coordinate
 1. specular highlight (bling-phong lighting)
 1. User input
